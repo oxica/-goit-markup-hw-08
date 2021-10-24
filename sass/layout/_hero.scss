@@ -1,11 +1,8 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 400px;
 
   background-image: linear-gradient(
       to right,
@@ -19,36 +16,58 @@
   background-size: cover;
 
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
+  padding: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 696px;
+  max-width: 250px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 18px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    max-width: 360px;
+    line-height: 1.36;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hero__btn {
   display: inline-block;
-  min-width: 200px;
+  min-width: 140px;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 10px 32px;
+  padding: 7px;
 
   background-color: var(--accent-color);
   color: var(--white-text-color);
 
   font-family: $mainFont;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+
+  font-size: 12px;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -61,5 +80,11 @@
   &:focus {
     background-color: var(--white-text-color);
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 10px 32px;
+    font-size: 16px;
+    min-width: 200px;
   }
 }
