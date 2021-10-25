@@ -312,7 +312,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .features-list__item {
     width: 354px;
   }
@@ -379,6 +379,13 @@ ul {
 
 .work {
   padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .work__title {
