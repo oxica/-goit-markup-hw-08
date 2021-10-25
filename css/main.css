@@ -280,28 +280,17 @@ ul {
   display: block;
 }
 
-@media screen and (min-width: 320px) {
-  .features-list {
-    width: 290px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
+    width: 768px;
   }
 }
 
 .features-list__item {
   margin-left: 15px;
   margin-right: 15px;
-}
-
-@media screen and (min-width: 320px) {
-  .features-list__item {
-    width: 290px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -324,12 +313,6 @@ ul {
   flex-direction: column;
   margin-bottom: 30px;
   background-color: var(--team-background-color);
-}
-
-@media screen and (min-width: 320px) {
-  .features-list__icon-fon {
-    width: 290px;
-  }
 }
 
 @media screen and (min-width: 480px) {
