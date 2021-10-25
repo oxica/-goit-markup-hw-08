@@ -58,6 +58,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -496,38 +498,55 @@ ul {
 }
 
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .client__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
 .client__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
+  margin: 0 15px;
 }
 
 .customers {
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    flex-wrap: nowrap;
+  }
 }
 
 .customers__item {
-  width: 170px;
   height: 90px;
+  width: 100%;
+  flex-basis: calc(100% / 2 - 30px);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .customers__item:focus, .customers__item:hover {
@@ -535,10 +554,32 @@ ul {
   border-color: var(--accent-color);
 }
 
+@media screen and (max-width: 479px) {
+  .customers__item {
+    flex-wrap: nowrap;
+    flex-basis: calc(100% - 30px);
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    width: 170px;
+  }
+}
+
 .customers__link {
-  display: block;
-  width: 170px;
-  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   color: #afb1b8;
   background-color: #fff;
@@ -549,6 +590,12 @@ ul {
 .customers__link:focus, .customers__link:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
+  }
 }
 
 .customers__icon {
