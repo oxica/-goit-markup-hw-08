@@ -817,7 +817,7 @@ img {
 
 @media (max-width: 767px) {
   .portfolio-btn-list {
-    margin-left: 15px;
+    padding: 0px 15px;
   }
 }
 
@@ -891,46 +891,27 @@ img {
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px 30px;
+  padding: 0px 15px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-list {
-    margin-left: 15px;
+    grid-template-columns: auto auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio-list {
-    justify-content: flex-start;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
   }
 }
 
 .portfolio-item {
-  align-items: stretch;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (max-width: 479px) {
-  .portfolio-item {
-    width: 270px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .portfolio-item {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio-item {
-    flex-basis: calc((100% - 60px) / 2);
-  }
 }
 
 .portfolio-item:hover, .portfolio-item:focus {
