@@ -1,17 +1,30 @@
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
-.portfolio-btn-item {
-  &:not(:last-child) {
-    margin-right: 8px;
+  margin-bottom: 40px;
+
+  grid-gap: 8px;
+  grid-row-gap: 15px;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
