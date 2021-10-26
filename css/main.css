@@ -813,7 +813,12 @@ img {
   margin-bottom: 40px;
   grid-gap: 8px;
   grid-row-gap: 15px;
-  margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+  .portfolio-btn-list {
+    margin-left: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -896,7 +901,6 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-list {
     margin-left: 15px;
-    margin-right: -15px;
   }
 }
 
