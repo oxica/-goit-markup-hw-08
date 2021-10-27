@@ -102,10 +102,18 @@
   display: grid;
   grid-template-columns: auto;
   gap: 30px 30px;
-  // padding: 0px 15px;
+  padding-left: 15px;
+    padding-right: 15px;
 
+   @media screen and (min-width: 480px) {
+    grid-template-columns: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   @media screen and (min-width: 768px) {
     grid-template-columns: auto auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   @media screen and (min-width: 1200px) {
     grid-template-columns: auto auto auto;
