@@ -947,7 +947,6 @@ img {
   display: grid;
   grid-template-columns: auto;
   gap: 30px 30px;
-  padding: 0px 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -959,7 +958,6 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio-list {
     grid-template-columns: auto auto auto;
-    padding: 0px;
   }
 }
 
