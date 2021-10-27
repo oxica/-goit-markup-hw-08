@@ -3,7 +3,7 @@
   display: none;
 
   @media screen and (min-width: 1200px) {
-    display: block;;
+    display: block;
   }
 }
 
@@ -13,17 +13,15 @@
 
 .work-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
 }
 
 .work-list__item {
   position: relative;
 }
 
-.work-list__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
 .work-list__text {
   width: 100%;
   position: absolute;

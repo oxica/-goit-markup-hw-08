@@ -13,6 +13,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 165px;
+  }
 }
 
 .footer__logo {
@@ -30,7 +37,6 @@
 
 .footer-contact__item {
   margin-top: 9px;
-  
 }
 
 .footer-contact__link {
@@ -54,6 +60,9 @@
   // width: 206px;
   margin-top: 60px;
   text-align: center;
+  @media (min-width: 768px) {
+    margin-top: 0px;
+  }
 }
 
 .social-section__text {
@@ -65,6 +74,10 @@
   text-transform: uppercase;
 
   color: var(--white-text-color);
+
+  @media (min-width: 768px) {
+    padding-bottom: 10px;
+  }
 }
 
 .footer-list {
@@ -113,6 +126,10 @@
   // margin-left: 93px;
   margin-top: 60px;
   padding: 0px 15px;
+  @media (min-width: 768px) {
+    margin-top: 0px;
+    padding: 0;
+  }
 }
 
 .footer-submit__text {
