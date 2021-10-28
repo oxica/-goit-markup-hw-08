@@ -49,6 +49,13 @@ img {
   margin-right: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -947,8 +954,6 @@ img {
   display: grid;
   grid-template-columns: auto;
   gap: 30px 30px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
