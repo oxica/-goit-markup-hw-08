@@ -954,6 +954,7 @@ img {
   display: grid;
   grid-template-columns: auto;
   gap: 30px 30px;
+  align-items: stretch;
 }
 
 @media screen and (min-width: 480px) {
