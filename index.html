@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__section">
         <nav class="header__nav">
           <a class="header__logo logo link" href="./index.html"
@@ -59,8 +59,45 @@
             >
           </li>
         </ul>
+        <button class="menu-open" data-menu-open>
+        <svg class="menu-burger" width="24" height="16">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+        </button>
       </div>
-    </header> -->
+    
+    </header>
+    <div class="mob-menu flex is-hidden" data-menu>
+      <div>
+        <button class="menu-close" data-menu-close>
+          <svg class="menu-close" width="40" height="40">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-list__item">
+            <a class="mob-menu-list__link link mob-menu-list__link--current" href="./index.html">Студия</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a class="mob-menu-list__link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a class="mob-menu-list__link link" href="">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mob-menu-list__down">
+        <a class="mob-menu-list__tell link" href="tel:+380961111111">
+          +38 096 111 11 11</a>
+        <a class="mob-menu-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="mob-menu-list__social list">
+          <li class="mob-menu-list__social-item">Instagram</li>
+          <li class="mob-menu-list__social-item">Twitter</li>
+          <li class="mob-menu-list__social-item">Facebook</li>
+          <li class="mob-menu-list__social-item">LinkedIn</li>
+        </ul>
+      </div>
+    </div>
     <main>
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -540,5 +577,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
