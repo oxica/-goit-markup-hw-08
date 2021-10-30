@@ -481,17 +481,21 @@ img {
   }
 }
 
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  grid-gap: 30px;
+@media screen and (max-width: 479px) {
+  .features {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
-  .features-list {
-    width: 1200px;
-  }
+.features-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list {
+  justify-content: center;
+  grid-gap: 30px;
 }
 
 @media screen and (min-width: 480px) {

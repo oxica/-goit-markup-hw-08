@@ -6,17 +6,20 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  @media screen and (max-width: 479px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.features-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   grid-gap: 30px;
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
 }
 
 .features-list__item {
