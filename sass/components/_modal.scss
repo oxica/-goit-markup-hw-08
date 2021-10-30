@@ -25,13 +25,23 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 290px;
+  min-height: 609px;
   background-color: #ffffff;
 
   position: relative;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-icon {
@@ -62,10 +72,18 @@
 }
 
 .form {
-  width: 528px;
+  width: 290px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .form-title {
