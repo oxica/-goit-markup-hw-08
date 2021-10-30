@@ -1,7 +1,6 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   text-align: center;
+  padding: 60px 15px;
 
   background-color: var(--hero-background-color);
 }
@@ -9,7 +8,7 @@
 .footer__flex {
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   list-style: none;
 
   @media (min-width: 768px) {
