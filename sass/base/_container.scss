@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     padding-left: 15px;
     padding-right: 15px;
   }
