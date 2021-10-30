@@ -2,12 +2,20 @@
   border-bottom: 1px solid #ececec;
   padding-top: 15px;
   padding-bottom: 15px;
+  
 }
 
 .header__section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+  }
 }
 
 .header__nav {
@@ -27,7 +35,9 @@
 
 .nav {
   display: flex;
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav__item {
@@ -77,8 +87,15 @@
 }
 
 .header-contact {
+  
   display: flex;
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  flex-direction: column;
+  align-content: center;
+}
 }
 
 .header-contack__list {
@@ -87,6 +104,17 @@
 
 .header-contact__item + .header-contact__item {
   margin-left: 50px;
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+.header-contact__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 0px;
+  }
 }
 
 .header-contact__link {
@@ -107,7 +135,20 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+    
+  }
 }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header-contact__item:not(:last-child) {
+    margin-bottom: 10px;
+    
+  }
+    }
+
 
 .header-contact__icon {
   margin-right: 10px;
@@ -122,6 +163,8 @@
   top: 0;
   right: 0;
   padding: 15px 10px 48px 40px;
+
+  
 }
 
 .flex {
@@ -144,6 +187,10 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
