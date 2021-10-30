@@ -261,6 +261,7 @@ img {
   top: 0;
   right: 0;
   padding: 15px 10px 48px 40px;
+  z-index: 999;
 }
 
 .flex {
@@ -1051,6 +1052,13 @@ img {
   .portfolio-section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .portfolio-section {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
