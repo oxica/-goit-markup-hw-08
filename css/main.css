@@ -210,7 +210,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contact__item + .header-contact__item {
     margin-left: 0px;
-    margin-bottom: 10px;
   }
 }
 
