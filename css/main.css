@@ -957,7 +957,6 @@ img {
 
 .footer-submit {
   margin-top: 60px;
-  padding: 0px 15px;
 }
 
 @media (min-width: 768px) {
@@ -1064,12 +1063,6 @@ img {
   grid-row-gap: 15px;
 }
 
-@media (max-width: 767px) {
-  .portfolio-btn-list {
-    padding: 0px 15px;
-  }
-}
-
 @media (min-width: 768px) {
   .portfolio-btn-list {
     justify-content: center;
@@ -1149,16 +1142,12 @@ img {
 @media screen and (min-width: 480px) {
   .portfolio-list {
     grid-template-columns: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-list {
     grid-template-columns: auto auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
