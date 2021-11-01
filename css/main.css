@@ -738,12 +738,12 @@ img {
   padding: 0px 32px;
   margin-top: 16px;
   list-style: none;
+  gap: 10px;
 }
 
 .team-list__social-item {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
 }
 
 .team-list__social-link {
