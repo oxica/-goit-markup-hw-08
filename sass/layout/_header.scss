@@ -1,7 +1,10 @@
 .header {
   border-bottom: 1px solid #ececec;
-  // padding-top: 15px;
-  // padding-bottom: 15px;
+
+   @media screen and (max-width: 767px) {
+    padding-top: 16px;
+  padding-bottom: 16px;
+  }
 }
 
 .header__section {
@@ -185,17 +188,11 @@
   }
 }
 
-.menu-burger {
-  // width: 40px;
-  // height: 40px;
-}
-
 .menu-close {
   display: flex;
   align-items: center;
   justify-content: center;
-  // width: 40px;
-  // height: 40px;
+  
   background-color: transparent;
   color: #212121;
   border: none;
@@ -206,15 +203,6 @@
   &:focus {
     fill: var(--accent-color);
   }
-}
-
-.menu-close {
-  // width: 40px;
-  // height: 40px;
-}
-
-.mob-menu-list {
-  // margin-bottom: 306px;
 }
 
 .mob-menu-list__item {
